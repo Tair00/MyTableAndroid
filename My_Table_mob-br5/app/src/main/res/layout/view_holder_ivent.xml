@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="375dp"
+    android:layout_height="310dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/backgrount_ivent"
+    android:elevation="8dp">
+
+    <ImageView
+        android:id="@+id/iventPic"
+        android:layout_width="365dp"
+        android:layout_height="279dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/ivent" />
+
+    <TextView
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/iventDesc"
+        android:text="Закажи столик в ресторане ....
+и получи чашку чая в подарок"
+        android:textSize="20sp"
+        android:textColor="#414141"
+        app:layout_constraintBottom_toBottomOf="@+id/iventPic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iventTitle"
+        android:layout_marginBottom="60dp"
+        android:rotation="35.53"
+        android:text="Акция, английский полдник"
+        android:textColor="#FFCA42"
+        app:layout_constraintBottom_toBottomOf="@+id/iventPic"
+        app:layout_constraintEnd_toEndOf="@+id/iventPic"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/iventPic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/bacground_category.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/background_white.xml" value="0.124" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/backgrount_ivent.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/field.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/num_background.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/num_cart_background.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/profile_icon.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/puy_background.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/recommended_cart.xml" value="0.102" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/rounded_corners.xml" value="0.102" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable-v24/white_recommended_btn.xml" value="0.102" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable/bounce_animation.xml" value="0.102" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable/grey_bar.xml" value="0.214" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/drawable/yeallow_bar.xml" value="0.198" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_booking.xml" value="0.11302083333333333" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_booking2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_booking_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_cart.xml" value="0.264" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_institution_name.xml" value="0.15568862275449102" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_puy.xml" value="0.4" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_show_detail.xml" value="0.2" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/activity_signup.xml" value="0.33905579399141633" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/booking_item.xml" value="0.4" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/fragment_user_name.xml" value="0.2" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/puy_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/restoran_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/table_item.xml" value="0.2" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/view_holder_ivent.xml" value="0.25416666666666665" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/layout/viewholder_category.xml" value="0.25416666666666665" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2595" />
+        <entry key="..\:/Games/MyTablePr/app/src/main/res/xml/bounce_animation.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

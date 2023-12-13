@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="147dp"
+    android:layout_height="200dp"
+    android:layout_margin="20dp"
+
+    android:background="@drawable/recommended_cart"
+    android:elevation="3dp">
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="149dp"
+        android:layout_height="103dp"
+        app:cardCornerRadius="12dp"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <ImageView
+            android:id="@+id/table_cart"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_background"
+            android:scaleType="centerCrop"
+            android:transitionName="productImage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:srcCompat="@drawable/table_cart" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textColor="#10405A"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="1dp"
+        android:text="4 персоны"
+        android:textColor="#10405A"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/addToCartBtn"
+        android:layout_width="114dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="48dp"
+        android:layout_weight="0.5"
+
+        android:background="@drawable/yellow_btn_background"
+        android:drawablePadding="5dp"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Забронировать"
+        android:textColor="#10405A"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

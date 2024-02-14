@@ -38,7 +38,7 @@ import ru.mvlikhachev.mytablepr.R;
 
 public class ShowDetailActivity extends AppCompatActivity implements CartListener {
     private TextView addToCartBtn;
-    private TextView titleTxt, feeTxt, description, starTxt, tableTxt;
+    private TextView titleTxt, feeTxt, description, starTxt, coffeeTxt;
     private ImageView heart, restoranPic;
     private RestoranDomain object;
     private TextView numberOrderTxt;
@@ -172,14 +172,6 @@ public class ShowDetailActivity extends AppCompatActivity implements CartListene
                                         public void onErrorResponse(VolleyError error) {
                                             String errorMessage = "Ресторан уже добавлен  )";
                                             Toast.makeText(ShowDetailActivity.this,errorMessage,Toast.LENGTH_SHORT).show();
-//                                            String errorMessage = "Error: " + error.getMessage();
-//                                            Toast.makeText(ShowDetailActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
-//                                            if (error.networkResponse != null) {
-//                                                int statusCode = error.networkResponse.statusCode;
-//                                                String responseData = new String(error.networkResponse.data);
-//                                                Log.e("ErrorResponse", "Status Code: " + statusCode);
-//                                                Log.e("ErrorResponse", "Response Data: " + responseData);
-//                                            }
                                         }
                                     }) {
                                 @Override
@@ -195,7 +187,7 @@ public class ShowDetailActivity extends AppCompatActivity implements CartListene
                             queue.add(request);
                         } catch (JSONException e) {
                             e.printStackTrace();
-                                   }
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -287,7 +279,7 @@ public class ShowDetailActivity extends AppCompatActivity implements CartListene
                             String ratingUrl = "https://losermaru.pythonanywhere.com/rating";
 
                             JSONObject jsonBody = new JSONObject();
-                            jsonBody.put("rating", (int) Float.parseFloat(selectedRating));;
+                            jsonBody.put("rating", Math.round(Float.parseFloat(selectedRating)));
                             jsonBody.put("user_id", userId);
                             jsonBody.put("restaurant_id", restaurantId);
                             updateRating(selectedRating);
@@ -297,7 +289,7 @@ public class ShowDetailActivity extends AppCompatActivity implements CartListene
                                         @Override
                                         public void onResponse(JSONObject response) {
 //                                            getBundle();
-                                            Toast.makeText(ShowDetailActivity.this, "Rating sent successfully", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(ShowDetailActivity.this, "Спасибо за оценку", Toast.LENGTH_SHORT).show();
                                         }
                                     },
                                     new Response.ErrorListener() {
@@ -361,7 +353,7 @@ public class ShowDetailActivity extends AppCompatActivity implements CartListene
     }
     private void initView() {
         star=findViewById(R.id.star);
-        tableTxt = findViewById(R.id.tableTxt);
+        coffeeTxt = findViewById(R.id.tableTxt);
         numberOrderTxt = findViewById(R.id.numberItemTxt);
         heart = findViewById(R.id.heart);
         addToCartBtn = findViewById(R.id.addToCartBtn);

@@ -201,7 +201,7 @@ public class CartActivity extends AppCompatActivity implements ManagementCart.Ca
     }
 
     protected void initView() {
-        profileIcon = findViewById(R.id.profile_icon);
+//        profileIcon = findViewById(R.id.profile_icon);
         recyclerViewList = findViewById(R.id.view);
         scrollView = findViewById(R.id.scrollView);
     }
@@ -324,6 +324,7 @@ public class CartActivity extends AppCompatActivity implements ManagementCart.Ca
                     public void onResponse(String response) {
                         System.out.println(" УСПЕХ");
                         executeGetRequest();
+                        Toast.makeText(CartActivity.this, "Удалено", Toast.LENGTH_SHORT).show();
                     }
                 },
                 new Response.ErrorListener() {

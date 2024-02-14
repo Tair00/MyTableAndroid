@@ -74,7 +74,9 @@ import retrofit2.Response;
 
         Picasso.get().load(product.getPicture()).into(holder.productImage);
 
-        holder.grade.setText(String.valueOf(product.getStar()));
+        String formattedStar = String.format("%.1f", product.getStar());
+        holder.grade.setText(formattedStar);
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -19,13 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="188dp"
-                android:layout_height="188dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginLeft="90dp"
-                android:id="@+id/profile_icon"
-                android:background="@drawable/profile_icon"/>
+
             <TextView
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"

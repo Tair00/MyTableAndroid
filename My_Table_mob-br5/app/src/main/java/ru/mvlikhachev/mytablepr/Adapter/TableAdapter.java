@@ -53,10 +53,6 @@ public class TableAdapter extends RecyclerView.Adapter<TableAdapter.TableViewHol
 
         holder.tableTitles.setText(table.getTitle());
         holder.tableDesc.setText(String.valueOf(table.getSeat()));
-
-//        int imageId = holder.itemView.getContext().getResources().getIdentifier(table.getPic(), "drawable", holder.itemView.getContext().getPackageName());
-//        Glide.with(holder.itemView.getContext()).load(imageId).into(holder.tableImage);
-
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

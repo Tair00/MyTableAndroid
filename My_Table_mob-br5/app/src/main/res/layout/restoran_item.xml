@@ -4,7 +4,7 @@
 
     xmlns:tools="http://schemas.android.com/tools"
 
-    android:layout_width="317dp"
+    android:layout_width="match_parent"
     android:layout_height="353dp"
     android:layout_margin="20dp"
 
@@ -12,26 +12,28 @@
     android:elevation="3dp">
     <!--    xmlns:tools="http://schemas.android.com/tools"-->
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="12dp"
-        tools:layout_editor_absoluteX="-1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/pic"
-            android:layout_width="321dp"
+            android:layout_width="match_parent"
             android:layout_height="196dp"
 
-            android:layout_marginEnd="16dp"
+
+
             android:adjustViewBounds="true"
             android:background="@drawable/rounded_corners"
             android:scaleType="centerCrop"
             android:transitionName="productImage"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.101"
             app:srcCompat="@drawable/rest1" />
     </androidx.cardview.widget.CardView>
 

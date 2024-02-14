@@ -205,9 +205,9 @@ public class BookingActivity2 extends AppCompatActivity implements UserNameFragm
                                     new Response.Listener<JSONObject>() {
                                         @Override
                                         public void onResponse(JSONObject response) {
-                                            Toast.makeText(BookingActivity2.this, "Reservation successful", Toast.LENGTH_SHORT).show();
-                                            Intent intent1 = new Intent(BookingActivity2.this, PuyActivity.class);
-                                            startActivity(intent1);
+                                            Toast.makeText(BookingActivity2.this, "Запрос отправлен", Toast.LENGTH_SHORT).show();
+//                                            Intent intent1 = new Intent(BookingActivity2.this, MainActivity.class);
+//                                            startActivity(intent1);
                                         }
                                     },
                                     new Response.ErrorListener() {

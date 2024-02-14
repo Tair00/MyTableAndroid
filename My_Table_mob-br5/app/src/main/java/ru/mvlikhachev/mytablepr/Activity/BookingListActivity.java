@@ -86,17 +86,6 @@ public class BookingListActivity extends Activity {
 
         queue.add(request);
     }
-    private void sendNotification(String message) {
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "channel_id")
-                .setSmallIcon(R.drawable.round_table)
-                .setContentTitle("Новые элементы")
-                .setContentText(message)
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
-
-        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-        notificationManager.notify(1, builder.build());
-    }
-
     private void parseResponse(JSONArray response) {
         try {
             boolean hasNewApprovedItems = false;
@@ -111,7 +100,7 @@ public class BookingListActivity extends Activity {
                     String date = jsonObject.getString("day");
                     String time = jsonObject.getString("time");
                     String number = jsonObject.getString("number");
-                    String name = "Tair";
+                    String name = jsonObject.getString("name");
 
                     BookingItem booking = new BookingItem(status, picture, date, time, name, id, number);
 
@@ -127,8 +116,7 @@ public class BookingListActivity extends Activity {
             adapter.notifyDataSetChanged();
 
             if (hasNewApprovedItems) {
-                // Отправка уведомления
-                sendNotification("Столик был забронирован !!!");
+
             }
         } catch (JSONException e) {
             e.printStackTrace();

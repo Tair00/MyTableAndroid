@@ -78,11 +78,18 @@ public class RestoranDomain implements Serializable {
     }
 
     public Float getStar() {
-        return star;
+        if (star != null) {
+            return Math.round(star * 10.0f) / 10.0f;
+        }
+        return null;
     }
 
     public void setStar(Float star) {
-        this.star = star;
+        if (star != null) {
+            this.star = Math.round(star * 10.0f) / 10.0f;
+        } else {
+            this.star = null;
+        }
     }
 
     public int getTable() {
@@ -110,7 +117,7 @@ public class RestoranDomain implements Serializable {
         this.cat_id = cat_id;
     }
     public RestoranDomain() {
-        // Инициализация объекта по умолчанию, если требуется
+
     }
 
 

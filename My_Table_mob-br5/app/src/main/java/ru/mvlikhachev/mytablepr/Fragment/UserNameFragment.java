@@ -2,20 +2,14 @@ package ru.mvlikhachev.mytablepr.Fragment;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
-
 import org.jetbrains.annotations.Nullable;
-
-import ru.mvlikhachev.mytablepr.Activity.BookingActivity2;
 import ru.mvlikhachev.mytablepr.R;
 
 public class UserNameFragment extends DialogFragment {
